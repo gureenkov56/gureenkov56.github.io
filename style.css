@@ -1,0 +1,41 @@
+body, h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    font-family: 'VT323', monospace;
+    font-weight: 200;
+}
+
+.container{
+    max-width: 1340px;
+    margin: 0 auto;
+}
+
+.hello{
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+    min-height: 500px;
+    background-color: #faf;
+}
+
+.hello__image pre{
+    margin-top: 60px;
+}
+
+.hello__image{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: #ffa;
+    padding: 0 20%;
+    position: relative;
+}
+
+.image__me{
+    position: absolute;
+}
+
+.hello__headlines{
+    margin-top: 60px;
+}
+
+.hello__text{
+    max-width: 400px;
+}

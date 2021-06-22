@@ -1,12 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <title>Гуреенков Никита</title>
   </head>
   <body>
-    Старт
+    <div class="container">
+      
+        <div class="hello">
+            <div class="hello__image">
+                <img src="images/me.png" alt="" class="image__me">
+                <pre>
+const select = document.querySelector('#choose-theme');
+let lastSelectedTheme = localStorage.getItem('theme') || 'white';
+setTheme(lastSelectedTheme);
+
+select.addEventListener('change', changeTheme);
+
+function changeTheme(lastSelectedTheme) {
+	const choosenTheme = select.value;
+	localStorage.setItem("theme", choosenTheme);
+	setTheme(choosenTheme);
+}
+
+function setTheme(nameTheme) {
+	select.value = nameTheme;
+	const selectedTheme = themes[nameTheme];
+	Object.entries(selectedTheme).forEach(([key, val]) => {
+		document.documentElement.style.setProperty(key, val);
+	});
+}
+                </pre>
+                
+            </div>
+            <div class="hello__headlines"><h1>WEB-DEVELOPER</h1></div>
+            <div class="hello__text">
+                <p>Lorem Ipsum используют потому, что тот 
+                обеспечивает более или менее стандартное заполнение шаблона.</p>
+                <p>A также реальное распределение букв и пробелов в абзацах.</p>
+            </div>
+        </div>
+    </div>
   </body>
 </html>
