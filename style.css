@@ -13,26 +13,29 @@ h6 {
 .container {
   max-width: 1340px;
   margin: 0 auto;
+  padding: 0 5%;
 }
+
+/* hello block */
 
 .hello {
   display: grid;
   grid-template-columns: 5fr 5fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100px auto;
   min-height: 500px;
   /* background-color: #faf; */
 }
 
 .hello__image {
   grid-row-start: 1;
-  grid-row-end: 5;
+  grid-row-end: 4;
   /* background-color: #ffa; */
   position: relative;
   margin: 0 10%;
 }
 
 .image__bgcode {
-  max-height: 50%;
+  max-height: 45%;
   margin-top: 60px;
   overflow: hidden;
 }
@@ -56,19 +59,73 @@ h6 {
   max-width: 400px;
 }
 
-@media screen and (max-width: 700px) {
+/* my tools */
+
+.my-tools h2 {
+  margin: 10px;
+  text-align: center;
+}
+
+.my-tools-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.my-tools__item {
+  height: 80px;
+  margin: 20px 10px;
+  flex: 1;
+  text-align: center;
+}
+
+.my-tools__item img {
+  max-width: auto;
+  max-height: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  h1 {
+    text-align: center;
+  }
+
   .hello {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
   }
 
+  .hello__image {
+    margin: 0 20%;
+    /* background-color: #faa; */
+  }
+
+  .image__bgcode p {
+    
+  }
+
   .hello__headlines {
     grid-row-start: 1;
     grid-row-end: 2;
+    margin: 30px 0px;
+  }
+
+  .hello__text{
+      margin: 0px auto;
   }
 
   .hello__image {
     grid-row-start: 2;
     grid-row-end: 3;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .hello__image {
+    margin: 0 0;
+    /* background-color: #faf; */
+  }
+
+  .hello__text{
+      margin-top: -10px;
   }
 }

@@ -20,7 +20,7 @@
           <div class="image__bgcode">
             <p>
 const select = document.querySelector('#choose-theme');
-let lastSelectedTheme = localStorage.getItem('theme') || 'white';
+let lastSelectedTheme = localStorage.getItem('theme');
 setTheme(lastSelectedTheme);
 
 select.addEventListener('change', changeTheme);
@@ -31,13 +31,7 @@ function changeTheme(lastSelectedTheme) {
 	setTheme(choosenTheme);
 }
 
-function setTheme(nameTheme) {
-	select.value = nameTheme;
-	const selectedTheme = themes[nameTheme];
-	Object.entries(selectedTheme).forEach(([key, val]) => {
-		document.documentElement.style.setProperty(key, val);
-	});
-}
+
             </p>
           </div>
         </div>
@@ -48,6 +42,35 @@ function setTheme(nameTheme) {
             стандартное заполнение шаблона.
           </p>
           <p>A также реальное распределение букв и пробелов в абзацах.</p>
+        </div>
+      </div>
+      <div class="my-tools">
+        <h2>MY TOOLS</h2>
+        <div class="my-tools-images">
+          <div class="my-tools__item">
+            <img
+              src="/images/js-icon.png"
+              alt=""
+            />
+          </div>
+          <div class="my-tools__item">
+            <img
+              src="/images/php-icon.png"
+              alt=""
+            />
+          </div>
+          <div class="my-tools__item">
+            <img
+              src="/images/bs-icon.png"
+              alt=""
+            />
+          </div>
+          <div class="my-tools__item">
+            <img
+              src="/images/jq-icon.png"
+              alt=""
+            />
+          </div>
         </div>
       </div>
     </div>
