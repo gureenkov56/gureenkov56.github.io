@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
 body{
   margin: 0;
 }
@@ -9,13 +11,16 @@ h4,
 h5,
 h6 {
   margin: 30px 0px 10px 0px;
-  font-family: "VT323", monospace;
-  font-weight: 200;
+  color: rgb(61, 61, 61);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
   font-size: 2.2em;
 }
 
 p{
-  font-family: Microsoft Sans Serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 1000;
+  color: rgb(107, 107, 107);
 }
 
 
