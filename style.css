@@ -1,14 +1,24 @@
-body,
+body{
+  margin: 0;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  margin: 0;
+  margin: 30px 0px 10px 0px;
   font-family: "VT323", monospace;
   font-weight: 200;
+  font-size: 2.2em;
 }
+
+p{
+  font-family: Microsoft Sans Serif;
+}
+
+
 
 .container {
   max-width: 1340px;
@@ -42,7 +52,7 @@ h6 {
 
 .image__me {
   position: absolute;
-  max-width: 100%;
+  max-width: 90%;
   height: auto;
 }
 
@@ -60,17 +70,17 @@ h6 {
 .p-fu{color: violet;}
 
 .hello__headlines {
-  margin-top: 60px;
+  margin: 0px 10px;
 }
 
 .hello__text {
   max-width: 400px;
+  margin: 20px 10px;
 }
 
 /* my tools */
 
 .my-tools h2 {
-  margin: 10px;
   text-align: center;
 }
 
@@ -105,7 +115,6 @@ h6 {
   .hello__headlines {
     grid-row-start: 1;
     grid-row-end: 2;
-    margin: 30px 0px;
   }
 
   .hello__text{
