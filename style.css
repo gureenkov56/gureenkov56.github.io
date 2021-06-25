@@ -103,8 +103,28 @@ p{
 }
 
 .my-tools__item img {
-  max-width: auto;
-  max-height: 100%;
+  height: 100px;
+  width: auto;
+}
+
+.js{
+  color: #EFD81D;
+}
+
+.php{
+  color: #6576c0;
+  font-size: 100px;
+}
+
+.bs{
+  color: #814CCE;
+  font-size: 80px;
+}
+
+.bs p{
+  color: #814CCE;
+  font-size: 15px;
+  margin-top: 0;
 }
 
 /* footer */
