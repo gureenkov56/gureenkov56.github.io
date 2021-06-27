@@ -25,10 +25,17 @@ h3{
   font-size: 1.5em;
 }
 
-p{
+p,
+ul,
+ol{
   font-family: 'Montserrat', sans-serif;
   font-weight: 1000;
   color: rgb(107, 107, 107);
+}
+
+a{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 1000;
 }
 
 .container {
@@ -161,6 +168,9 @@ p{
   border-radius: 5px;
   overflow: hidden;
   padding-bottom: 15px;
+  a {
+    text-decoration: none;
+  }
 }
 
 .projects__item img{
@@ -205,7 +215,7 @@ footer{
 
 .footer__container{
   margin: 0 auto;
-  max-width: 100px;
+  max-width: 300px;
   display: flex;
   justify-content: space-around;
   font-size: 20px;
