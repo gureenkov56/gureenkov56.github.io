@@ -87,6 +87,16 @@ a{
 .p-st{color: limegreen;}
 .p-fu{color: violet;}
 
+.cursor{
+  animation: blinking 1s linear infinite;
+}
+
+@keyframes blinking {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
 .hello__headlines {
   margin: 0px 10px;
 }
