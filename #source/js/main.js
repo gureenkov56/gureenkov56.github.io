@@ -14,4 +14,6 @@ function textAnimate(txtArr) {
   }, 30);
 }
 
-textAnimate(textArr);
+$(document).ready(function () {
+  textAnimate(textArr);
+});
