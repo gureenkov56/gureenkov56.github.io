@@ -11,7 +11,7 @@ function textAnimate(txtArr) {
     }
     spanText.before(txtArr[i]);
     i++;
-  }, 30);
+  }, 40);
 }
 
 $(document).ready(function () {
