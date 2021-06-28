@@ -1,1 +1,1 @@
-const text="WEB-DEVELOPER",textArr=text.split(""),spanText=$(".cursor");function textAnimate(t){let e=0,n=setInterval((()=>{e+1>=t.length&&clearInterval(n),spanText.before(t[e]),e++}),40)}$(document).ready((function(){textAnimate(textArr)}));
+const text="WEB-DEVELOPER",textArr=text.split(""),spanText=$(".cursor");function textAnimate(t){let e=0,n=setInterval((()=>{e+1>=t.length&&clearInterval(n),spanText.before(t[e]),e++}),40)}$(window).on("load",(function(){textAnimate(textArr)}));

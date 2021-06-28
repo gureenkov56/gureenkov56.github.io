@@ -14,6 +14,6 @@ function textAnimate(txtArr) {
   }, 40);
 }
 
-$(document).ready(function () {
+$(window).on("load", function () {
   textAnimate(textArr);
 });
