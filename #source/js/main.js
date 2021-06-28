@@ -14,6 +14,4 @@ function textAnimate(txtArr) {
   }, 40);
 }
 
-$(window).on("load", function () {
-  textAnimate(textArr);
-});
+$(window).on("load", () => setTimeout(textAnimate(textArr), 5000));
