@@ -10,7 +10,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 30px auto 10px auto;
+  margin: 30px auto 30px auto;
   color: rgb(61, 61, 61);
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
@@ -36,6 +36,7 @@ ol{
 a{
   font-family: 'Montserrat', sans-serif;
   font-weight: 1000;
+  color: inherit;
 }
 
 .container {
@@ -59,8 +60,6 @@ a{
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0;
-
 }
 
 .image__container{
@@ -74,6 +73,7 @@ a{
   position: absolute;
   max-width: 90%;
   height: auto;
+  z-index: 2;
 }
 
 .image__bgcode p{
@@ -82,6 +82,7 @@ a{
   font-size: 20px;
   font-weight: 400;
   font-family: Courier, monospace;
+  opacity: 0;
 }
 
 .p-js{color: orange;}
@@ -106,6 +107,7 @@ a{
 .hello__text {
   max-width: 400px;
   margin: 20px 10px;
+  opacity: 0;
 }
 
 /* my tools */

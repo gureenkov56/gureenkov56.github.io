@@ -1,7 +1,7 @@
 let windowHeight = $(window).height(); //для анимации H2 при скроле
 
 $(window).on("load", () =>
-  setTimeout(textAnimate("WEB-DEVELOPER", $("h1 > span")), 5000)
+  setTimeout(textAnimate("WEB-DEVELOPER", $("h1 > span")), 2000)
 );
 
 let wasMyTools = false;
@@ -41,6 +41,6 @@ function textAnimate(text, htmlEl) {
 
 
 $(document).ready(function () {
-  $(".hello__image").animate({ opacity: "1" }, 500);
+  $(".image__bgcode p").animate({ opacity: "1" }, 500);
   $(".hello__text").animate({ opacity: "1" }, 500);
   });
