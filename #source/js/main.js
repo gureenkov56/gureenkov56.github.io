@@ -1,7 +1,7 @@
 let windowHeight = $(window).height(); //для анимации H2 при скроле
 
 $(window).on("load", () =>
-  setTimeout(textAnimate("WEB-СТОЛЯР", $("h1 > span")), 2000)
+  setTimeout(textAnimate("WEB-DEVELOPER", $("h1 > span")), 2000)
 );
 
 let wasMyTools = false;
