@@ -41,6 +41,6 @@ function textAnimate(text, htmlEl) {
 
 
 $(document).ready(function () {
-  $(".hello__image").animate({ opacity: "1" }, 1000);
-  $(".hello__text").animate({ opacity: "1" }, 1000);
-});
+  $(".hello__image").animate({ opacity: "1" }, 500);
+  $(".hello__text").animate({ opacity: "1" }, 500);
+  });
