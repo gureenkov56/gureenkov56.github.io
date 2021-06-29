@@ -1,3 +1,5 @@
+let windowHeight = $(window).height(); //для анимации H2 при скроле
+
 $(window).on("load", () =>
   setTimeout(textAnimate("WEB-DEVELOPER", $("h1 > span")), 5000)
 );
@@ -5,7 +7,8 @@ $(window).on("load", () =>
 let wasMyTools = false;
 $(window).scroll(() => {
   if (
-    $(document).scrollTop() + 450 > $(".my-tools").offset().top && wasMyTools === false
+    $(document).scrollTop() + windowHeight * 0.8 > $(".my-tools").offset().top &&
+    wasMyTools === false
   ) {
     textAnimate("MY TOOLS", $(".my-tools > h2 > span"));
     wasMyTools = true;
@@ -15,7 +18,7 @@ $(window).scroll(() => {
 let wasMyProject = false;
 $(window).scroll(() => {
   if (
-    $(document).scrollTop() + 450 > $(".projects").offset().top &&
+    $(document).scrollTop() + ($(window).height() * 0.8) > $(".projects").offset().top &&
     wasMyProject === false
   ) {
     textAnimate("PROJECTS", $(".projects > h2 > span"));
@@ -36,3 +39,8 @@ function textAnimate(text, htmlEl) {
 }
 
 
+
+$(document).ready(function () {
+  $(".hello__image").animate({ opacity: "1" }, 500);
+  $(".hello__text").animate({ opacity: "1" }, 500);
+});
