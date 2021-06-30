@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
 
-body{
+body {
   margin: 0;
 }
 
@@ -12,29 +12,34 @@ h5,
 h6 {
   margin: 30px auto 30px auto;
   color: rgb(61, 61, 61);
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
 }
 
 h1,
-h2{
+h2 {
   font-size: 1.5em;
 }
 
-h3{
+h3 {
   font-size: 1.5em;
 }
 
 p,
 ul,
-ol{
-  font-family: 'Montserrat', sans-serif;
+ol,
+figcaption {
+  font-family: "Montserrat", sans-serif;
   font-weight: 1000;
   color: rgb(110, 110, 110);
 }
 
-a{
-  font-family: 'Montserrat', sans-serif;
+figcaption{
+  padding: 20px 0px;
+}
+
+a {
+  font-family: "Montserrat", sans-serif;
   font-weight: 1000;
   color: inherit;
 }
@@ -62,7 +67,7 @@ a{
   align-items: center;
 }
 
-.image__container{
+.image__container {
   width: 95%;
   max-width: 400px;
   max-height: 600px;
@@ -76,7 +81,7 @@ a{
   z-index: 2;
 }
 
-.image__bgcode p{
+.image__bgcode p {
   white-space: pre-wrap;
   color: silver;
   font-size: 20px;
@@ -85,19 +90,33 @@ a{
   opacity: 0;
 }
 
-.p-js{color: orange;}
-.p-name{color: deepskyblue;}
-.p-st{color: limegreen;}
-.p-fu{color: violet;}
+.p-js {
+  color: orange;
+}
+.p-name {
+  color: deepskyblue;
+}
+.p-st {
+  color: limegreen;
+}
+.p-fu {
+  color: violet;
+}
 
-.cursor{
+.cursor {
   animation: blinking 1s linear infinite;
 }
 
 @keyframes blinking {
-  0% { opacity: 1.0; }
-  50% { opacity: 0.0; }
-  100% { opacity: 1.0; }
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .hello__headlines {
@@ -112,7 +131,7 @@ a{
 
 /* my tools */
 
-.my-tools{
+.my-tools {
   margin-top: 80px;
 }
 
@@ -138,44 +157,44 @@ a{
   width: auto;
 }
 
-.js{
-  color: #EFD81D;
+.js {
+  color: #efd81d;
 }
 
-.php{
+.php {
   color: #6576c0;
   font-size: 100px;
 }
 
-.bs{
-  color: #814CCE;
+.bs {
+  color: #814cce;
   font-size: 80px;
 }
 
-.bs p{
-  color: #814CCE;
+.bs p {
+  color: #814cce;
   font-size: 15px;
   margin-top: 0;
 }
 
 /* projects */
 
-.projects{
+.projects {
   margin-top: 80px;
 }
 
-.projects h2{
+.projects h2 {
   text-align: center;
 }
 
-.projects__container{
+.projects__container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 
-.projects__item{
+.projects__item {
   flex: 1 300px;
   margin: 10px;
   border: 1px solid lightgrey;
@@ -187,7 +206,7 @@ a{
   }
 }
 
-.projects__item img{
+.projects__item img {
   width: 100%;
   height: 200px;
   object-fit: cover;
@@ -195,31 +214,58 @@ a{
 
 .projects__item h3,
 .projects__item p,
-.projects__item button{
+.projects__item button {
   margin-left: 10px;
 }
 
-.projects__item button{
+.projects__item button {
   border: none;
-  background-color: #F7DF1E;
+  background-color: #f7df1e;
   padding: 10px 30px;
-  font-family: 'Montserrat', sans-serif;
+  top: auto;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   border-radius: 4px;
   cursor: pointer;
 }
 
-.projects__item button:active{
+.projects__item button:active {
   background-color: #ddc829;
   transform: translateY(2px);
 }
 
+/* projects */
 
+.project img {
+  align-self: center;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.big-img{
+  max-width: 800px !important;
+}
+
+figure{
+  text-align: center;
+  padding: 70px 3px;
+  background-color: rgb(241, 241, 241);
+}
+
+.note{
+  background-color: rgb(197, 227, 255);
+  max-width: 800px;
+  padding: 10px 2px 10px 2px;
+  border-radius: 3px;
+}
 
 /* footer */
 
-footer{
+footer {
   background-color: black;
   text-align: center;
   color: grey;
@@ -227,7 +273,7 @@ footer{
   padding: 30px;
 }
 
-.footer__container{
+.footer__container {
   margin: 0 auto;
   max-width: 300px;
   display: flex;
@@ -250,8 +296,8 @@ footer{
     grid-row-end: 2;
   }
 
-  .hello__text{
-      margin: 0px auto;
+  .hello__text {
+    margin: 0px auto;
   }
 
   .hello__image {
@@ -260,30 +306,28 @@ footer{
   }
 
   .my-tools__item img {
-  height: 50px;
+    height: 50px;
   }
 
-  .php{
-  color: #6576c0;
-  font-size: 50px;
+  .php {
+    color: #6576c0;
+    font-size: 50px;
   }
 
-  .bs{
-  color: #814CCE;
-  font-size: 50px;
+  .bs {
+    color: #814cce;
+    font-size: 50px;
   }
 
-  .bs p{
-  color: #814CCE;
-  font-size: 10px;
-  margin-top: 0;
+  .bs p {
+    color: #814cce;
+    font-size: 10px;
+    margin-top: 0;
   }
-
- 
 }
 
 @media screen and (max-width: 400px) {
-  .image__bgcode p{
+  .image__bgcode p {
     font-size: 15px;
   }
 }
