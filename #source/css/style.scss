@@ -237,6 +237,11 @@ a {
 
 /* projects */
 
+.project{
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 .project img {
   align-self: center;
   width: 100%;
@@ -252,8 +257,9 @@ a {
 
 figure{
   text-align: center;
-  padding: 70px 3px;
+  padding: 3% 3px;
   background-color: rgb(241, 241, 241);
+  margin: 10px 0px;
 }
 
 .note{
