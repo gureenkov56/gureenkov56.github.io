@@ -1,124 +1,204 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Гуреенков Никита - Порфтолио</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="hello">
-        <div class="hello__image">
-          <img src="images/me.png" alt="" class="image__me" />
-          <div class="image__container">
-            <div class="image__bgcode">
-              <p>
-<span class="p-js">function </span><span class="p-name">changeTheme </span>(<span class="p-name">lastSelectedTheme</span>){
-	<span class="p-js">const</span> <span class="p-name">choosenTheme</span> = <span class="p-js">select</span>.<span class="p-fu">value</span>;
-	<span class="p-js">localStorage</span>.<span class="p-fu">setItem</span> (<span class="p-st">"theme"</span>, <span class="p-name">choosenTheme</span>);
-	<span class="p-js">setTheme</span> (<span class="p-name">choosenTheme</span>);
-}
-
-<span class="p-js">const</span> <span class="p-name">select</span> = <span class="p-js">document</span>.<span class="p-fu">querySelector</span>( <span class="p-st">'#choose-theme'</span>);
-<span class="p-js">let</span> <span class="p-name">lastSelectedTheme</span> = <span class="p-js">localStorage</span>.<span class="p-fu">getItem</span>(<span class="p-st">'theme'</span>);
-<span class="p-js">setTheme</span>(<span class="p-js">lastSelectedTheme</span>);
-
-<span class="p-js">select</span>.<span class="p-fu">addEventListener</span> (<span class="p-st">'change'</span>, <span class="p-js">changeTheme</span>);
-    </p>
-          </div>
-          </div>
-        </div>
-        <div class="hello__headlines"><h1><span class="cursor me">|</span></h1></div>
-        <div class="hello__text">
-          <p>
-            Всем привет! Я Никита Гуреенков. Оказывается, интроверсия отлично сочетается с программированием. Так я увлекся кодингом всерьез и надолго.
-          </p>
-          <p>Сейчас  активно разрабатываю проекты на JS и PHP с использованием фреймворков.</p>
-        </div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hi! I'm Nik!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="wrapper" class='d-flex'>
+    <div id="leftSide">
+      <h1>Gureenkov Nik</h1>
+      <span id="leftSide__profession">Web Developer</span>
+      <div id="leftSide__photo">1</div>
+      <div id="leftSide__links" class='tac'>
+        <p>
+          <img src="https://cdn-icons-png.flaticon.com/512/2527/2527686.png" alt="geoicon" class='icon'>
+          Vladivostok, RUSSIA
+        </p>
+        <p>
+          <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="emailicon" class=icon>
+          g56@mail.col
+        </p>
+        <p>
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733609.png" class='icon' alt="giticon">
+          g23g
+        </p>
       </div>
-      <div class="my-tools">
-        <h2><span class="cursor">|</span></h2>
-        <div class="my-tools-images">
-          <div class="my-tools__item js">
-            <img src="/images/js.svg" alt="JavaScript">
-          </div>
-          <div class="my-tools__item php">
-            <i class="fab fa-php"></i>
-          </div>
-          <div class="my-tools__item bs">
-            <i class="fab fa-bootstrap"></i>
-            <p>Bootstrap</p>
-          </div>
-          <div class="my-tools__item">
-            <img
-              src="/images/jq.svg"
-              alt="jQuery"
-            />
-          </div>
-        </div>
-      </div>
-      <div class="projects">
-        <h2><span class="cursor me">|</span></h2>
-        <div class="projects__container">
-          <div class="projects__item">
-            <a href="/acceleration-speed.html">
-              <img src="/images/wp-speed.png" alt="">
-              <h3>🚀 Ускорение сайта на Wordpress</h3>
-              <p class='project-description'>Быстрее, выше, сильнее!</p>
-              <button>Ускоряемся</button>
-            </a>
-          </div>
-          <div class="projects__item">
-            <a href="/wp-theme.html">
-              <img src="/images/projects/wp-theme-prev.png" alt="">
-              <h3>🌱Тема для Wordpress своими руками</h3>
-              <p class='project-description'>Тема с упором на визуальный контент.</p>
-              <button>Смотрим</button>
-            </a>
-          </div>
-          <div class="projects__item">
-            <a href="/bitrix-correction.html">
-              <img src="/images/bitrix-project-prev.jpg" alt="">
-              <h3>🛠 Исправление верстки сайта на Bitrix</h3>
-              <p class='project-description'>Причесываем сайт в ногу со временем.</p>
-              <button>Читаем</button>
-            </a>
-          </div>
-          <div class="projects__item">
-            <a href="/wp-correction.html">
-              <img src="/images/wp-correct.png" alt="">
-              <h3>⭐ Корректировка шаблона Wordpress</h3>
-              <p class='project-description'>Больше места для полезного контента</p>
-              <button>Читаем</button>
-            </a>
-          </div>
-        </div>
-      </div>
+      
     </div>
-    <footer>
-      <p>Contacts</p>
-      <div class="footer__container">
-        <a href="http://wa.me/79807034830">
-          <i class="fab fa-whatsapp"></i>
-        </a>
-        <a href="mailto:gureenkov56@gmail.com">
-          <i class="far fa-envelope"></i>
-        </a>
-        <a href="https://www.instagram.com/gureenkov56/">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://github.com/gureenkov56">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://twitter.com/gureenkov56">
-          <i class="fab fa-twitter"></i>
-        </a>
+    <div id="rightSide">
+      <nav>
+        <ul class='d-flex'>
+          <li>Hello!</li>
+          <li>Технологии</li>
+          <li>Проекты</li>
+          <li>Контакты</li>
+        </ul>
+      </nav>
+      <!-- h2 must wrappered in d-flex -->
+      <div id="aboutMeWrapper">
+        <div class="d-flex">
+          <div>
+            <div class="h2wrapper">
+              <h2>Hello!</h2>
+            </div>
+
+          </div>
+          <div class='h2description'>
+            Что-то тут текст
+          </div>
+        </div>
+
+        <div class="d-flex aboutMe fw-wrap">
+        <div class="aboutMe__text">
+          <h3>I am Web Developer</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit atque voluptatem nesciunt est voluptates possimus labore tempora aperiam molestiae delectus? Fugit quos quo veritatis saepe beatae, aliquam ea commodi aliquid cumque, iste architecto aut mollitia reiciendis quod dicta tenetur eligendi quaerat adipisci, harum ullam nobis officiis expedita. Voluptas, debitis laudantium!
+          </p>
+        </div>
+        <div class="aboutMe__review">
+          <h3 class='lineAfter'>Review</h3>
+          <div class="review__wrapper">
+            <div class="review__text">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, cum!</p>
+            </div>
+            <div class="review__client d-flex">
+              <div class="client__avatarWrapper">
+                <div class="client__avatar bgc"></div>
+              </div>
+              
+              <div class="client__nameCompanyWrapper">
+                <p class="client__name">John Stare</p>
+                <p class="client__company">Goole Inc</p>
+              </div>
+              
+              <div class="review__tooglersWrapper d-flex">
+                <button class="review__previous"> < </button>
+                <button class="review__next">></button>
+              </div>
+            </div>
+            
+          </div>
+          
+        </div>
       </div>
-      <script src="https://kit.fontawesome.com/fc55ea8002.js" crossorigin="anonymous"></script>
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-      <script src="/js/main.js"></script>
-    </footer>
-  </body>
+      </div>
+      
+    <div id='technologies'>
+        <h3>Технологии</h3>
+        <div class="d-flex jc-space-between technologies__wrapper">
+          <div class='technologies__item'>
+            <div class="technologies__item__img">
+            </div>
+            <h4>JavaScript, HTML, CSS</h4>
+            <p class='m-0'>Основы основ. Кстати, этот сайт написан на чистых JS, HTML и CSS</p>
+          </div>
+          <div class='technologies__item'>
+            <div class="technologies__item__img">
+              
+            </div>
+            <h4>ИНСТРУМЕНТЫ</h4>
+            <p>Работаю с WebPack, VSCode и прочими полезностями</p>
+          </div>
+          <div class='technologies__item'>
+            <div class="technologies__item__img">
+              
+            </div>
+            <h4>ФРЕЙМВОРКИ</h4>
+            <p>Работаю быстрее с VUE, JQuery и Bootstrap</p>
+          </div>
+          <div class='technologies__item'>
+            <div class="technologies__item__img">
+              
+            </div>
+            <h4>ENGLISH</h4>
+            <p>Могу поддержать беседу и перевести инструкцию для тонометра бабули</p>
+          </div>
+        </div>
+      </div>
+        
+      <div id="projects" class='mt-50'>
+        <div class="d-flex">
+          <div>
+            <div class="h2wrapper projects__h2">
+              <h2>Проекты</h2>
+            </div>
+
+          </div>
+          <div class='h2description'>
+            Творю, вытворяю
+          </div>
+        </div>
+        <h3 class='lineAfter'>Проекты-флагманы</h3>
+        <div class="d-flex jc-space-between fw-wrap projects__wrapper">
+          
+          <div class='projects__item'>
+            <div class="projects__item__img">
+            </div>
+            <h4>Проект 1</h4>
+            <p class='m-0'>Умеет то и то</p>
+          </div>
+          
+          <div class='projects__item'>
+            <div class="projects__item__img">
+            </div>
+            <h4>Проект 2</h4>
+            <p class='m-0'>Туц, е, ага</p>
+          </div>
+
+        </div>
+        <h3 class='lineAfter'>PET-PROJECTS для души</h3>
+        <ul>
+          <li>Цифровой калькулятор <a href='s' class='italic'>*GIT*</a></li>
+          <li>Прогноз погоды (через API) <a href='s' class='italic'>*GIT*</a></li> 
+          <li>Конструктор box-shadow <a href='s' class='italic'>*GIT*</a></li>
+          <li>Tудушечка по классике <a href='s' class='italic'>*GIT*</a></li>
+          <li>Помодоро на скролле <a href='s' class='italic'>*GIT*</a></li>
+          
+         
+        </ul>
+      </div>
+      
+      <div id="contacts" class='mt-50'>
+        <div class="d-flex">
+          <div>
+            <div class="h2wrapper contacts__h2">
+              <h2>Контакты</h2>
+            </div>
+
+          </div>
+          <div class='h2description'>
+            Всегда на связи, всегда на базе
+          </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, libero.</p>
+        <h3 class='lineAfter'>Как меня найти</h3>
+        <p>
+          <img src="https://cdn-icons-png.flaticon.com/512/2527/2527686.png" alt="geoicon" class='icon'>
+          Vladivostok, RUSSIA
+        </p>
+        <p>
+          <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="emailicon" class=icon>
+          g56@mail.col
+        </p>
+
+        <p>
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733609.png" class='icon' alt="giticon">
+          g23g
+        </p>
+        
+        <p>
+          <img src="https://cdn-icons-png.flaticon.com/512/54/54346.png" alt="status" class='icon'>
+          Открыт для предложений
+        </p>
+      </div>
+      <p>Дизайн позаимствован с <a href="https://lmpixels.com/demo/sunshine-demo/sunshine-version-1/sunshine-v1-html-template/index.html#about_me">ресурса</a></p>
+    </div>
+  </div>
+  <button id="mobileButton">></button>
+  <script src="main.js"></script>
+</body>
 </html>
