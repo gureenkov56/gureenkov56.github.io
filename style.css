@@ -13,7 +13,7 @@ body {
 
 body {
   /* hide x scroll bar */
-  overflow-x: scroll;
+  /* overflow-x: auto; */
 }
 
 #leftSide {
