@@ -36,10 +36,12 @@ body{
   position: absolute;
   right: 0;
   height: 100%;
+  width: 20px;
   background-color: inherit;
   text-align: center;
   border: none;
   color: white;
+  font-size: 1.5rem;
   font-family: 'Rubik', sans-serif;
   cursor: pointer;
   -webkit-transition: all 1s;
@@ -409,10 +411,10 @@ a:visited{
 
 @media screen and (max-width: 850px){
   #leftSide{
-    left: -280px;
+    left: -270px;
   }
   #rightSide{
-    left: 20px;
+    left: 30px;
     width: 75%;
   }
   #buttonOpenSide{
