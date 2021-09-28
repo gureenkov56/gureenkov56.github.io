@@ -13,9 +13,9 @@ function openLeftSide() {
   if (isLeftSideOpen) {
     console.log('asd');
     isLeftSideOpen = false;
-    leftSide.style.cssText = "left: -280px;";
+    leftSide.style.cssText = "left: -270px;";
     buttonOpenSide.style.cssText = "transform: rotate(0deg);";
-    rightSide.style.cssText = "left: 20px;";
+    rightSide.style.cssText = "left: 30px;";
     setTimeout(() => {
       body.style.cssText = "overflow-x: auto;";
       html.style.cssText = "overflow-x: auto;";
