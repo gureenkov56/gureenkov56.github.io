@@ -1,33 +1,28 @@
-//get elements
+// state
+let isLeftSideOpen = false;
 
+// html element
+const leftSide = document.querySelector("#leftSide");
+const rightSide = document.querySelector("#rightSide");
 const body = document.querySelector("body");
-const mobileOpenOpenLeftSide = document.querySelector("#mobileButton");
+const buttonOpenSide = document.querySelector("#buttonOpenSide");
 
-// variable of state
-
-let isOpenLeftSide = false;
-
-// events
-
-mobileOpenOpenLeftSide.addEventListener("click", openLeftSide);
-window.addEventListener("scroll", yScrollForbider);
-
-// functions
-
+//functions
 function openLeftSide() {
-  if (isOpenLeftSide) {
-    isOpenLeftSide = false;
-    body.style.cssText = "margin-left: -220px;";
-    mobileOpenOpenLeftSide.style.cssText = "left: 3px;";
-    mobileOpenOpenLeftSide.innerHTML = ">";
+  if (isLeftSideOpen) {
+    console.log('asd');
+    isLeftSideOpen = false;
+    leftSide.style.cssText = "left: -280px;";
+    buttonOpenSide.style.cssText = "transform: rotate(0deg);";
+    rightSide.style.cssText = "left: 20px;";
+    setTimeout(() => {
+      body.style.cssText = "overflow-x: auto;";
+    }, 1000);
   } else {
-    isOpenLeftSide = true;
-    body.style.cssText = "margin-left: 0px;";
-    mobileOpenOpenLeftSide.style.cssText = "left: 220px;";
-    mobileOpenOpenLeftSide.innerHTML = "<";
+    isLeftSideOpen = true;
+    leftSide.style.cssText = "left: 0;";
+    rightSide.style.cssText = "left: 300px;";
+    body.style.cssText = "overflow-x: hidden;";
+    buttonOpenSide.style.cssText = "transform: rotate(180deg);";
   }
-}
-
-function yScrollForbider() {
-  window.scroll(0, window.pageYOffset);
 }
