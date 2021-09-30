@@ -45,10 +45,10 @@
     <div id="rightSide">
       <nav>
         <ul class="d-flex">
-          <li>Hello!</li>
-          <li>Технологии</li>
-          <li>Проекты</li>
-          <li>Контакты</li>
+          <li onclick='scrollWindowTo("aboutMeWrapper")'>Hello!</li>
+          <li onclick='scrollWindowTo("technologies")'>Технологии</li>
+          <li onclick='scrollWindowTo("projects")'>Проекты</li>
+          <li onclick='scrollWindowTo("contacts")'>Контакты</li>
         </ul>
       </nav>
       <!-- h2 must wrappered in d-flex -->
@@ -85,7 +85,9 @@
               </div>
               <div class="review__client d-flex">
                 <div class="client__avatarWrapper">
-                  <div class="client__avatar bgc"></div>
+                  <div class="client__avatar bgc">
+                    <img src="./images/google.jpg" alt="google">
+                  </div>
                 </div>
 
                 <div class="client__nameCompanyWrapper">
@@ -94,8 +96,8 @@
                 </div>
 
                 <div class="review__tooglersWrapper d-flex">
-                  <button class="review__previous"><</button>
-                  <button class="review__next">></button>
+                  <button class="review__previous" onclick='changeReview("back")'><</button>
+                  <button class="review__next" onclick='changeReview("next")'>></button>
                 </div>
               </div>
             </div>
