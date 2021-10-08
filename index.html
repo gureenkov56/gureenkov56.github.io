@@ -66,38 +66,47 @@
           <div class="aboutMe__text">
             <h3>I am Web Developer</h3>
             <p>Никита, 23 года, веб-разработчик.</p>
+            <p>
+              Всем привет! Я Никита Гуреенков. Оказывается, интроверсия отлично
+              сочетается с программированием. Так я увлекся кодингом всерьез и
+              надолго.
+            </p>
+            <p>
+              Сейчас активно разрабатываю проекты на JS и PHP с использованием
+              фреймворков.
+            </p>
           </div>
           <div class="aboutMe__review">
             <h3 class="lineAfter">Review</h3>
             <div class="review__wrapper">
-              <div class="review__text">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Corporis, cum!
-                </p>
-              </div>
-              <div class="review__client d-flex">
-                <div class="client__avatarWrapper">
+              <div class="review__changeGroup">
+                <div class="review__text">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Corporis, cum!
+                  </p>
+                </div>
+                <div class="review__client">
                   <div class="client__avatar bgc">
                     <img src="./images/google.jpg" alt="google" />
                   </div>
-                </div>
 
-                <div class="client__nameCompanyWrapper">
-                  <p class="client__name">John Stare</p>
-                  <p class="client__company">Goole Inc</p>
-                </div>
+                  <div class="client__nameCompanyWrapper">
+                    <p class="client__name">John Stare</p>
+                    <p class="client__company">Goole Inc</p>
+                  </div>
 
-                <div class="review__tooglersWrapper d-flex">
-                  <button
-                    class="review__previous"
-                    onclick='changeReview("back")'
-                  >
-                    <
-                  </button>
-                  <button class="review__next" onclick='changeReview("next")'>
+                  <div class="review__tooglersWrapper d-flex">
+                    <button
+                      class="review__previous"
+                      onclick='changeReview("back")'
                     >
-                  </button>
+                      <
+                    </button>
+                    <button class="review__next" onclick='changeReview("next")'>
+                      >
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -228,12 +237,12 @@
           Открыт для предложений
         </p>
       </div>
-      <p>
+      <p class="contacts__smallText">
         Дизайн позаимствован с
         <a
           href="https://lmpixels.com/demo/sunshine-demo/sunshine-version-1/sunshine-v1-html-template/index.html#about_me"
           >ресурса</a
-        >
+        >. Спасибо дизайнерам, которые могут.
       </p>
     </div>
     <script src="./main.js"></script>

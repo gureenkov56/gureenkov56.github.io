@@ -215,10 +215,6 @@ p{
   transition: all .3s;
 }
 
-.client__avatarWrapper{
-  width: 70px;
-}
-
 .client__avatar{
   width: 70px;
   height: 70px;
@@ -236,6 +232,10 @@ p{
 
 .client__nameCompanyWrapper{
   margin: 10px;
+  position: relative;
+  top: -80px;
+  left: 80px;
+  width: 100px;
 }
 
 .client__name{
@@ -271,6 +271,10 @@ p{
 
 .review__tooglersWrapper{
   margin-right: 2%;
+  position: relative;
+  top: -130px;
+  left: 80%;
+  width: 80px;
 }
 
 /* technologies block */
@@ -360,6 +364,13 @@ a:visited{
   width: 15px;
   height: 15px;
   margin-right: 10px;
+}
+
+.contacts__smallText{
+  font-size: .8rem;
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 

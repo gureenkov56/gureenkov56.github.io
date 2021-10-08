@@ -1,4 +1,4 @@
-// data
+// data and state
 let isLeftSideOpen = false;
 
 let currentRevuewIdx = 0;
@@ -34,12 +34,14 @@ const clientName = document.querySelector(".client__name");
 const clientCompany = document.querySelector(".client__company");
 const clientAvatar = document.querySelector(".client__avatar > img");
 
+// events
 
+window.addEventListener("scroll", windowScroll);
 
 //functions
 function openLeftSide() {
   if (isLeftSideOpen) {
-    console.log('asd');
+    console.log("asd");
     isLeftSideOpen = false;
     leftSide.style.cssText = "left: -270px;";
     buttonOpenSide.style.cssText = "transform: rotate(0deg);";
@@ -58,9 +60,8 @@ function openLeftSide() {
   }
 }
 
-function scrollWindowTo(section){
+function scrollWindowTo(section) {
   let scrollLength = document.querySelector(`#${section}`).offsetTop;
-  console.dir(scrollLength);
 
   window.scrollBy({
     top: scrollLength,
@@ -68,7 +69,7 @@ function scrollWindowTo(section){
   });
 }
 
-function changeReview(direction){
+function changeReview(direction) {
   changeReviewIdx(direction);
   changeReviewWithAnimation();
 }
@@ -89,7 +90,7 @@ function changeReviewIdx(direction) {
   }
 }
 
-function changeReviewWithAnimation(){
+function changeReviewWithAnimation() {
   reviewTextP.style.cssText = "opacity: 0;";
   clientName.style.cssText = "opacity: 0;";
   clientCompany.style.cssText = "opacity: 0;";
@@ -105,8 +106,9 @@ function changeReviewWithAnimation(){
     clientName.style.cssText = "opacity: 1;";
     clientCompany.style.cssText = "opacity: 1;";
     clientAvatar.style.cssText = "opacity: 1;";
+  }, 1000);
+}
 
-  }, 1000)
-  
-
+function windowScroll(event) {
+  // console.dir(" / " + document.body.clientHeight);
 }
