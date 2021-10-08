@@ -345,6 +345,17 @@ a:visited{
   background-color: #FFCD38;
 }
 
+.contacts__photo{
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.contacts__photo > img{
+  width: 100%;
+}
+
 .icon{
   width: 15px;
   height: 15px;
