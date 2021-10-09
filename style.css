@@ -58,7 +58,7 @@ h1{
 }
 
 #leftSide__photo{
-  background-color: #D2E4E4;
+  /* background-color: #D2E4E4; */
   border-radius: 50%;
   margin: 30% auto;
   
@@ -72,17 +72,22 @@ h1{
 
 #leftSide__photo > img{
   width: 100%;
+  transition: all .3s;
+  border-radius: 100px;
 }
 
 #leftSide__links > p > a{
   color: #5094af;
 }
 
+#leftSide__links{
+  transition: all .3s;
+}
+
 .icon{
-  width: 15px;
-  height: 15px;
   margin-right: 10px;
-  filter:grayscale(0.9);
+  position: relative;
+  top: 2px;
 }
 
 
@@ -188,6 +193,17 @@ p{
 
 /* aboutMe block */
 
+.aboutMe__photo{
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.aboutMe__photo > img{
+  width: 100%;
+}
+
 .aboutMe__text{
   padding-right: 10px;
   -webkit-box-flex: 1;
@@ -209,6 +225,7 @@ p{
   font-style: italic;
   padding: 10px 20px;
   margin-left: 30px;
+  transition: all .3s;
 }
 
 .review__text > p{
@@ -235,7 +252,7 @@ p{
   position: relative;
   top: -80px;
   left: 80px;
-  width: 100px;
+  width: 150px;
 }
 
 .client__name{
@@ -349,17 +366,6 @@ a:visited{
   background-color: #FFCD38;
 }
 
-.contacts__photo{
-  width: 150px;
-  height: 150px;
-  overflow: hidden;
-  border-radius: 50%;
-}
-
-.contacts__photo > img{
-  width: 100%;
-}
-
 .icon{
   width: 15px;
   height: 15px;
@@ -370,6 +376,7 @@ a:visited{
   font-size: .8rem;
   max-width: 300px;
   margin: 0 auto;
+  padding-top: 30px;
   text-align: center;
 }
 
@@ -456,6 +463,10 @@ a:visited{
   #buttonOpenSide{
     display: block;
   }
+  .aboutMe__photo{
+    width: 150px;
+    height: 150px;
+  }
 }
 
 @media screen and (max-width: 650px){
@@ -467,6 +478,10 @@ a:visited{
 @media screen and (max-width: 530px){
   #rightSide{
     width: 60%;
+  }
+  .review__tooglersWrapper{
+    top: -90px;
+    left: 35%;
   }
 }
 

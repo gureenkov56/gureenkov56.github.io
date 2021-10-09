@@ -4,22 +4,22 @@ let isLeftSideOpen = false;
 let currentRevuewIdx = 0;
 let review = [
   {
-    text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, cum!",
-    author: "John Stare",
-    company: "Google",
-    avatar: "./images/google.jpg",
+    text: "Спасибо за выполненную работу и вклад в развитие нашего бизнеса.",
+    author: "Виктор",
+    company: "K&C GROUP",
+    avatar: "./images/review1.png",
   },
   {
-    text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisicing elit.",
-    author: "Robert Bosch",
-    company: "Bosch",
-    avatar: "./images/bosch.jpg",
+    text: "Качественно выполнена работа! Очень ответственный подход. Работы выполнена быстро и очень здорово!",
+    author: "Сергей",
+    company: 'ООО "СтройПром" ',
+    avatar: "./images/review2.png",
   },
   {
-    text: "Lorem ipsum dolor sit amet consectetur. Corporis, cum! Corporis, cum!",
-    author: "Henry Ford",
-    company: "Ford",
-    avatar: "./images/ford.png",
+    text: "Очень понравилась работа Никиты. Точно понял задание, выполнил все быстро и качественно. Спасибо за свежие идеи!",
+    author: "Ксения",
+    company: "RecStudio",
+    avatar: "./images/review3.png",
   },
 ];
 
@@ -33,6 +33,7 @@ const reviewTextP = document.querySelector(".review__text > p");
 const clientName = document.querySelector(".client__name");
 const clientCompany = document.querySelector(".client__company");
 const clientAvatar = document.querySelector(".client__avatar > img");
+
 
 // events
 
@@ -107,8 +108,4 @@ function changeReviewWithAnimation() {
     clientCompany.style.cssText = "opacity: 1;";
     clientAvatar.style.cssText = "opacity: 1;";
   }, 1000);
-}
-
-function windowScroll(event) {
-  // console.dir(" / " + document.body.clientHeight);
 }
