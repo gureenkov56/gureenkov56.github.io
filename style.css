@@ -58,9 +58,8 @@ h1{
 }
 
 #leftSide__photo{
-  /* background-color: #D2E4E4; */
   border-radius: 50%;
-  margin: 30% auto;
+  margin: 20% auto;
   
   position: relative;
   width: 70%;
@@ -78,10 +77,6 @@ h1{
 
 #leftSide__links > p > a{
   color: #5094af;
-}
-
-#leftSide__links{
-  transition: all .3s;
 }
 
 .icon{
@@ -472,6 +467,9 @@ a:visited{
 @media screen and (max-width: 650px){
   #rightSide{
     width: 70%;
+  }
+  #leftSide__photo{
+    margin: 10% auto 20% auto;
   }
 }
 
