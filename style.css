@@ -344,6 +344,7 @@ h4{
 .projects__item__img{
   height: 150px;
   overflow: hidden;
+  border-radius: 6px;
 }
 
 .projects__item__img > img {

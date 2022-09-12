@@ -1,311 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Hi! I'm Nik!</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="leftSide">
-      <button id="buttonOpenSide" onclick="openLeftSide()">></button>
-      <h1>Gureenkov Nik</h1>
-      <span id="leftSide__profession">Web Developer</span>
-      <div id="leftSide__photo">
-        <img src="./images/leftSide_Me_grey.jpg" alt="gureenkov" />
-      </div>
-      <div id="leftSide__links" class="ta-center">
-        <p>
-          <img src="./images/email.png" alt="emailicon" class="icon" />
-          <a href="mailto:gureenkov56@gmail.com">gureenkov56@gmail.com</a>
-        </p>
-
-        <p>
-          <img src="./images/github.png" class="icon" alt="giticon" />
-          <a href="https://github.com/gureenkov56">Github profile</a>
-        </p>
-
-        <p>
-          <img src="./images/inst.png" class="icon" alt="giticon" />
-          <a href="https://github.com/gureenkov56">gureenkov56</a>
-        </p>
-
-        <p>
-          <img src="./images/geo.png" alt="geoicon" class="icon" />
-          <a href="">St. Petersburg, RUSSIA</a>
-        </p>
-      </div>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div id="leftSide">
+    <button id="buttonOpenSide" onclick="openLeftSide()">></button>
+    <h1>Gureenkov Nik</h1>
+    <span id="leftSide__profession">Web Developer</span>
+    <div id="leftSide__photo">
+        <img src="./images/leftSide_Me_grey.jpg" alt="gureenkov"/>
     </div>
-    <div id="rightSide">
-      <nav>
+    <div id="leftSide__links" class="ta-center">
+        <p>
+            <img src="./images/email.png" alt="emailicon" class="icon"/>
+            <a href="mailto:gureenkov56@gmail.com">gureenkov56@gmail.com</a>
+        </p>
+
+        <p>
+            <img src="./images/github.png" class="icon" alt="giticon"/>
+            <a href="https://github.com/gureenkov56">Github profile</a>
+        </p>
+
+        <p>
+            <img src="./images/inst.png" class="icon" alt="giticon"/>
+            <a href="https://github.com/gureenkov56">gureenkov56</a>
+        </p>
+
+        <p>
+            <img src="./images/geo.png" alt="geoicon" class="icon"/>
+            <a href="">St. Petersburg, RUSSIA</a>
+        </p>
+    </div>
+</div>
+<div id="rightSide">
+    <nav>
         <ul class="d-flex">
-          <li onclick='scrollWindowTo("aboutMeWrapper")'>Hello!</li>
-          <li onclick='scrollWindowTo("technologies")'>Технологии</li>
-          <li onclick='scrollWindowTo("projects")'>Проекты</li>
-          <li onclick='scrollWindowTo("contacts")'>Контакты</li>
+            <li onclick='scrollWindowTo("aboutMeWrapper")'>Hello!</li>
+            <li onclick='scrollWindowTo("technologies")'>Технологии</li>
+            <li onclick='scrollWindowTo("projects")'>Проекты</li>
+            <li onclick='scrollWindowTo("contacts")'>Контакты</li>
         </ul>
-      </nav>
-      <!-- h2 must wrappered in d-flex -->
-      <div id="aboutMeWrapper">
+    </nav>
+    <!-- h2 must wrappered in d-flex -->
+    <div id="aboutMeWrapper">
         <div class="d-flex">
-          <div>
-            <div class="h2wrapper">
-              <h2>Hello!</h2>
+            <div>
+                <div class="h2wrapper">
+                    <h2>Hello!</h2>
+                </div>
             </div>
-          </div>
-          <div class="h2description">Стартуем!</div>
+            <div class="h2description">Стартуем!</div>
         </div>
         <div class="aboutMe__photo">
-          <img src="./images/leftSide_Me_grey.jpg" alt="gureenkov" />
+            <img src="./images/leftSide_Me_grey.jpg" alt="gureenkov"/>
         </div>
         <div class="d-flex aboutMe fw-wrap">
-          <div class="aboutMe__text">
-            <h3>I am Web Developer</h3>
-            <p>
-              Всем привет! Я Никита Гуреенков. Оказывается, интроверсия отлично
-              сочетается с программированием. Так я увлекся кодингом всерьез и
-              надолго.
-            </p>
-            <p>
-              Сейчас активно разрабатываю проекты на JS и PHP с использованием
-              фреймворков.
-            </p>
-          </div>
-          <div class="aboutMe__review">
-            <h3 class="lineAfter">Отзывы</h3>
-            <div class="review__wrapper">
-              <div class="review__changeGroup">
-                <div class="review__text">
-                  <p>
-                    Спасибо за выполненную работу и вклад в развитие нашего
-                    бизнеса.
-                  </p>
-                </div>
-                <div class="review__client">
-                  <div class="client__avatar bgc">
-                    <img src="./images/review1.png" alt="review1" />
-                    <img src="./images/review2.png" alt="review2" />
-                    <img src="./images/review3.png" alt="review3" />
-                  </div>
-
-                  <div class="client__nameCompanyWrapper">
-                    <p class="client__name">Виктор</p>
-                    <p class="client__company">K&C GROUP</p>
-                  </div>
-
-                  <div class="review__tooglersWrapper d-flex">
-                    <button
-                      class="review__previous"
-                      onclick='changeReview("back")'
-                    >
-                      <
-                    </button>
-                    <button class="review__next" onclick='changeReview("next")'>
-                      >
-                    </button>
-                  </div>
-                </div>
-              </div>
+            <div class="aboutMe__text">
+                <h3>I am Web Developer</h3>
+                <p>
+                    Всем привет! Я Никита Гуреенков. Оказывается, интроверсия отлично
+                    сочетается с программированием. Так я увлекся кодингом всерьез и
+                    надолго.
+                </p>
+                <p>
+                    Сейчас активно разрабатываю проекты на JS и PHP с использованием
+                    фреймворков.
+                </p>
             </div>
-          </div>
-        </div>
-      </div>
+            <div class="aboutMe__review">
+                <h3 class="lineAfter">Отзывы</h3>
+                <div class="review__wrapper">
+                    <div class="review__changeGroup">
+                        <div class="review__text">
+                            <p>
+                                Спасибо за выполненную работу и вклад в развитие нашего
+                                бизнеса.
+                            </p>
+                        </div>
+                        <div class="review__client">
+                            <div class="client__avatar bgc">
+                                <img src="./images/review1.png" alt="review1"/>
+                                <img src="./images/review2.png" alt="review2"/>
+                                <img src="./images/review3.png" alt="review3"/>
+                            </div>
 
-      <div id="technologies">
+                            <div class="client__nameCompanyWrapper">
+                                <p class="client__name">Виктор</p>
+                                <p class="client__company">K&C GROUP</p>
+                            </div>
+
+                            <div class="review__tooglersWrapper d-flex">
+                                <button
+                                        class="review__previous"
+                                        onclick='changeReview("back")'
+                                >
+                                    <
+                                </button>
+                                <button class="review__next" onclick='changeReview("next")'>
+                                    >
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="technologies">
         <h3>Технологии</h3>
         <div class="d-flex fw-wrap jc-space-between technologies__wrapper">
-          <div class="technologies__item">
-            <div class="technologies__item__img">
-              <img src="./images/CSS. HTML, JS.jpg" alt="html,css,js" />
+            <div class="technologies__item">
+                <div class="technologies__item__img">
+                    <img src="./images/CSS. HTML, JS.jpg" alt="html,css,js"/>
+                </div>
+                <h4>JavaScript, HTML, CSS</h4>
+                <p class="m-0">
+                    Основы основ. Кстати, этот сайт написан на чистых JS, HTML и CSS
+                </p>
             </div>
-            <h4>JavaScript, HTML, CSS</h4>
-            <p class="m-0">
-              Основы основ. Кстати, этот сайт написан на чистых JS, HTML и CSS
-            </p>
-          </div>
-          <div class="technologies__item">
-            <div class="technologies__item__img">
-              <img src="./images/tools.jpg" alt="tools" />
+            <div class="technologies__item">
+                <div class="technologies__item__img">
+                    <img src="./images/tools.jpg" alt="tools"/>
+                </div>
+                <h4>ИНСТРУМЕНТЫ</h4>
+                <p>Работаю с WebPack, VSCode и прочими полезностями</p>
             </div>
-            <h4>ИНСТРУМЕНТЫ</h4>
-            <p>Работаю с WebPack, VSCode и прочими полезностями</p>
-          </div>
-          <div class="technologies__item">
-            <div class="technologies__item__img">
-              <img src="./images/FRAMEWORK.jpg" alt="FRAMEWORK" />
+            <div class="technologies__item">
+                <div class="technologies__item__img">
+                    <img src="./images/FRAMEWORK.jpg" alt="FRAMEWORK"/>
+                </div>
+                <h4>ФРЕЙМВОРКИ</h4>
+                <p>Работаю быстрее с VUE, JQuery и Bootstrap</p>
             </div>
-            <h4>ФРЕЙМВОРКИ</h4>
-            <p>Работаю быстрее с VUE, JQuery и Bootstrap</p>
-          </div>
-          <div class="technologies__item">
-            <div class="technologies__item__img">
-              <img src="./images/eng.jpg" alt="English" />
+            <div class="technologies__item">
+                <div class="technologies__item__img">
+                    <img src="./images/eng.jpg" alt="English"/>
+                </div>
+                <h4>ENGLISH</h4>
+                <p>
+                    Могу поддержать беседу и перевести инструкцию для тонометра бабули
+                </p>
             </div>
-            <h4>ENGLISH</h4>
-            <p>
-              Могу поддержать беседу и перевести инструкцию для тонометра бабули
-            </p>
-          </div>
         </div>
-      </div>
+    </div>
 
-      <div id="projects" class="mt-50">
+    <div id="projects" class="mt-50">
         <div class="d-flex">
-          <div>
-            <div class="h2wrapper projects__h2">
-              <h2>Проекты</h2>
+            <div>
+                <div class="h2wrapper projects__h2">
+                    <h2>Проекты</h2>
+                </div>
             </div>
-          </div>
-          <div class="h2description">Творю, вытворяю</div>
+            <div class="h2description">Творю, вытворяю</div>
         </div>
         <h3 class="lineAfter">Проекты-флагманы</h3>
         <div class="d-flex fw-wrap projects__wrapper">
-          <div class="projects__item">
-            <div class="projects__item__img">
-              <img src="./images/check-u.png" alt="check-u" />
-            </div>
-            <h4>check-u</h4>
-            <p class="m-0">
-              Тест для программистов. Создан на Vue.js <br />
-              <a href="https://github.com/gureenkov56/check-u"
-                >Git-репозиторий</a
-              >
-            </p>
-          </div>
-
-              <div class="projects__item">
+            <div class="projects__item">
                 <div class="projects__item__img">
-                  <img src="./images/wp-theme.png" alt="airart" />
+                    <img src="./images/gotobed.png" alt="go-to-bed"/>
+                </div>
+                <h4>PWA приложение GoToBed</h4>
+                <p class="m-0">
+                    Веб-приложение с возможностью работы Offline<br/>
+                    <a href="https://go-to-bed.ru" target='_blank'>Сайт |</a>
+                    <a href="https://github.com/gureenkov56/go-to-bed" target='_blank'>Git-репо</a>
+                </p>
+            </div>
+
+            <div class="projects__item">
+                <div class="projects__item__img">
+                    <img src="./images/myblog.png" alt="go-to-bed"/>
+                </div>
+                <h4>Блог (FullStack)</h4>
+                <p class="m-0">
+                    Блог на PHP и JS. Авторизация, собственное API и т.д.<br/>
+                    <a href="https://gureenkov56.ru" target='_blank'>Сайт |</a> <a
+                        href="https://github.com/gureenkov56/gureenkov56-blog" target='_blank'>Git-репо</a>
+                </p>
+            </div>
+
+
+            <div class="projects__item">
+                <div class="projects__item__img">
+                    <img src="./images/check-u.png" alt="check-u"/>
+                </div>
+                <h4>check-u</h4>
+                <p class="m-0">
+                    Тест для программистов. Создан на Vue.js <br/>
+                    <a href="https://github.com/gureenkov56/check-u" target='_blank'>Git-репозиторий</a>
+                </p>
+            </div>
+
+            <div class="projects__item">
+                <div class="projects__item__img">
+                    <img src="./images/wp-theme.png" alt="airart"/>
                 </div>
                 <h4>Airart</h4>
                 <p class="m-0">
-                  Тема для WORDPRESS
-                  <br />
-                  <a href="https://github.com/gureenkov56/wp_template_for_blog"
-                    >Git-репозиторий</a
-                  >
+                    Тема для WORDPRESS
+                    <br/>
+                    <a href="https://github.com/gureenkov56/wp_template_for_blog" target='_blank'>Git-репозиторий</a>
                 </p>
-              </div>
+            </div>
         </div>
         <h3 class="lineAfter">PET-PROJECTS для души</h3>
         <ul>
-          
-          <li>
-            Цифровой калькулятор <br />
-            <a
-              href="https://github.com/gureenkov56/calculatoreJS"
-              class="italic"
-              >Git-репо</a
-            >
-            /
-            <a
-              href="https://gureenkov56.github.io/calculatoreJS/"
-              class="italic"
-              >Страница</a
-            >
-          </li>
-          <li>
-            Прогноз погоды (через API) <br />
-            <a href="https://github.com/gureenkov56/weatherJS" class="italic"
-              >Git-репозиторий</a
-            >
-          </li>
-          <li>
-            Конструктор box-shadow <br />
-            <a
-              href="https://github.com/gureenkov56/box-shadow-constructor"
-              class="italic"
-              >Git-репо</a
-            >
-            /
-            <a
-              href="https://gureenkov56.github.io/box-shadow-constructor/"
-              class="italic"
-              >Страница</a
-            >
-          </li>
-          <li>
-            e-shop (SPA на Vanilla Javascript) <br />
-            <a
-              href="https://github.com/gureenkov56/e-shop-JS"
-              class="italic"
-              >Git-репо</a
-            >
-            /
-            <a
-              href="https://gureenkov56.github.io/e-shop-JS/"
-              class="italic"
-              >Страница</a
-            >
-          </li>
-          <li>
-            Tудушечка по классике <br />
-            <a href="https://github.com/gureenkov56/toDoDoDo" class="italic"
-              >Git-репо</a
-            >
-            /
-            <a href="https://gureenkov56.github.io/toDoDoDo/" class="italic"
-              >Страница</a
-            >
-          </li>
-          <li>
-            Помодоро на скролле <br />
-            <a href="https://github.com/gureenkov56/scrollTimer" class="italic"
-              >Git-репо</a
-            >
-            /
-            <a href="https://gureenkov56.github.io/scrollTimer/" class="italic"
-              >Страница</a
-            >
-          </li>
-        </ul>
-      </div>
 
-      <div id="contacts" class="mt-50">
+            <li>
+                Цифровой калькулятор <br/>
+                <a
+                        href="https://github.com/gureenkov56/calculatoreJS"
+                        class="italic"
+                        target='_blank'
+                >Git-репо</a
+                >
+                /
+                <a
+                        href="https://gureenkov56.github.io/calculatoreJS/"
+                        class="italic"
+                        target='_blank'
+                >Страница</a
+                >
+            </li>
+            <li>
+                Прогноз погоды (через API) <br/>
+                <a href="https://github.com/gureenkov56/weatherJS" class="italic" target='_blank'
+                >Git-репозиторий</a
+                >
+            </li>
+            <li>
+                Конструктор box-shadow <br/>
+                <a
+                        href="https://github.com/gureenkov56/box-shadow-constructor"
+                        class="italic"
+                        target='_blank'
+                >Git-репо</a
+                >
+                /
+                <a
+                        href="https://gureenkov56.github.io/box-shadow-constructor/"
+                        class="italic"
+                        target='_blank'
+                >Страница</a
+                >
+            </li>
+            <li>
+                e-shop (SPA на Vanilla Javascript) <br/>
+                <a
+                        href="https://github.com/gureenkov56/e-shop-JS"
+                        class="italic"
+                        target='_blank'
+                >Git-репо</a
+                >
+                /
+                <a
+                        href="https://gureenkov56.github.io/e-shop-JS/"
+                        class="italic"
+                        target='_blank'
+                >Страница</a
+                >
+            </li>
+            <li>
+                Tудушечка по классике <br/>
+                <a href="https://github.com/gureenkov56/toDoDoDo" class="italic" target='_blank'
+                >Git-репо</a
+                >
+                /
+                <a href="https://gureenkov56.github.io/toDoDoDo/" class="italic" target='_blank'
+                >Страница</a
+                >
+            </li>
+            <li>
+                Помодоро на скролле <br/>
+                <a href="https://github.com/gureenkov56/scrollTimer" class="italic" target='_blank'
+                >Git-репо</a
+                >
+                /
+                <a href="https://gureenkov56.github.io/scrollTimer/" class="italic" target='_blank'
+                >Страница</a
+                >
+            </li>
+        </ul>
+    </div>
+
+    <div id="contacts" class="mt-50">
         <div class="d-flex">
-          <div>
-            <div class="h2wrapper contacts__h2">
-              <h2>Контакты</h2>
+            <div>
+                <div class="h2wrapper contacts__h2">
+                    <h2>Контакты</h2>
+                </div>
             </div>
-          </div>
-          <div class="h2description">Всегда на связи, всегда на базе</div>
+            <div class="h2description">Всегда на связи, всегда на базе</div>
         </div>
 
         <h3 class="lineAfter">Как меня найти</h3>
         <p>
-          <img src="./images/email.png" alt="emailicon" class="icon" />
-          <a href="mailto:gureenkov56@gmail.com">gureenkov56@gmail.com</a>
+            <img src="./images/email.png" alt="emailicon" class="icon"/>
+            <a href="mailto:gureenkov56@gmail.com">gureenkov56@gmail.com</a>
         </p>
 
         <p>
-          <img src="./images/github.png" class="icon" alt="giticon" />
-          <a href="https://github.com/gureenkov56">Github Profile</a>
+            <img src="./images/github.png" class="icon" alt="giticon"/>
+            <a href="https://github.com/gureenkov56">Github Profile</a>
         </p>
 
         <p>
-          <img src="./images/inst.png" class="icon" alt="giticon" />
-          <a href="https://www.instagram.com/gureenkov56/">gurenkov56</a>
+            <img src="./images/inst.png" class="icon" alt="giticon"/>
+            <a href="https://www.instagram.com/gureenkov56/">gurenkov56</a>
         </p>
 
         <p>
-          <img src="./images/geo.png" alt="geoicon" class="icon" />
-          <a href="https://2gis.ru/vladivostok">St. Petersburg, RUSSIA</a>
+            <img src="./images/geo.png" alt="geoicon" class="icon"/>
+            <a href="https://2gis.ru/vladivostok">St. Petersburg, RUSSIA</a>
         </p>
 
         <p>
-          <img src="./images/tick.png" alt="status" class="icon" />
-          Открыт для предложений
+            <img src="./images/tick.png" alt="status" class="icon"/>
+            Открыт для предложений
         </p>
-      </div>
-      <p class="contacts__smallText">
+    </div>
+    <p class="contacts__smallText">
         Дизайн позаимствован с
         <a
-          href="https://lmpixels.com/demo/sunshine-demo/sunshine-version-1/sunshine-v1-html-template/index.html#about_me"
-          >ресурса</a
+                href="https://lmpixels.com/demo/sunshine-demo/sunshine-version-1/sunshine-v1-html-template/index.html#about_me"
+        >ресурса</a
         >. Спасибо дизайнерам, которые могут.
-      </p>
-    </div>
-    <script src="./main.js"></script>
-  </body>
+    </p>
+</div>
+<script src="./main.js"></script>
+</body>
 </html>
